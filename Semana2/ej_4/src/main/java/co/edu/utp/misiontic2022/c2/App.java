@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
@@ -65,7 +66,17 @@ public class App {
         hmap.put(220, "Alejandro");
         hmap.put(620, "Ramos");
         hmap.put(9820, "Nieto");
+        hmap.put(620, "Mondongo");
+
+        System.out.println(hmap.get(920));
+        System.out.println(hmap.get(220));
+        System.out.println(hmap.get(620));
+        System.out.println(hmap.get(9820));
 
         System.out.println(hmap.entrySet());
+
+        for (Map.Entry pareja : hmap.entrySet()) {
+            System.out.println(pareja);
+        }
     }
 }
